@@ -3,65 +3,184 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Coding Contest</title>
+  <title>My Blog Website</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="projectn.css">
+  <link rel="stylesheet" href="projectn1.css">
 </head>
 <body>
-  <div class="frontpage">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-      <div class="container-fluid">
-        <a class="navbar-brand fw-bold" href="#">Coding Contest</a>
-        <i class="fa-solid fa-list"></i>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    </nav>
-    <div class="teamimage">
-      <div class="img-container text-center">
-      <img src="software.jpg" alt="Description of image" class="team-img">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold text-info" href="#">GitNexus 🔗</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blogs">Git Commands</a></li>
+          <li class="nav-item"><a class="nav-link" href="#profiles">Profiles</a></li>
+          <li class="nav-item"><a class="nav-link" href="#register">Register</a></li>
+        </ul>
       </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+<section id="home" class="frontpage d-flex align-items-center justify-content-center text-center">
+  
+  <img src="home.jpg" alt="Home Background" class="home-img">
+
+  <div class="overlay"></div>
+
+  <div class="content text-white">
+    <h1 class="fw-bold">Welcome to Our Event Club</h1>
+    <p class="lead">Learn Git, Explore Tech, and Build Projects 🚀</p>
+    <a href="#blogs" class="btn btn-info btn-lg mt-3">Explore Git Commands</a>
+  </div>
+</section>
+
+
+  <!-- Git Commands Section -->
+  <section id="blogs" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Git Commands</h2>
+      <div class="row g-4">
+        <!-- Beginner -->
+        <div class="col-md-4">
+          <div class="card git-card shadow-lg h-100">
+            <div class="card-body text-center">
+              <h4 class="card-title text-primary">Beginner</h4>
+              <p><code>git init</code> – Initialize repository</p>
+              <p><code>git status</code> – Show changes</p>
+              <p><code>git add .</code> – Stage files</p>
+              <p><code>git commit -m ""</code> – Save changes</p>
+            </div>
+          </div>
+        </div>
+        <!-- Intermediate -->
+        <div class="col-md-4">
+          <div class="card git-card shadow-lg h-100">
+            <div class="card-body text-center">
+              <h4 class="card-title text-success">Intermediate</h4>
+              <p><code>git branch</code> – List branches</p>
+              <p><code>git checkout -b branch</code> – New branch</p>
+              <p><code>git merge branch</code> – Merge branch</p>
+              <p><code>git log --oneline</code> – Short log</p>
+            </div>
+          </div>
+        </div>
+        <!-- Advanced -->
+        <div class="col-md-4">
+          <div class="card git-card shadow-lg h-100">
+            <div class="card-body text-center">
+              <h4 class="card-title text-danger">Advanced</h4>
+              <p><code>git reset --hard HEAD~1</code> – Undo commit</p>
+              <p><code>git rebase main</code> – Reapply commits</p>
+              <p><code>git stash</code> – Save temp changes</p>
+              <p><code>git cherry-pick id</code> – Apply commit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Multiple Profile Cards -->
+  <section id="profiles" class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-4">Our Team</h2>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card profile-card shadow-lg">
+            <img src="profile1.jpg" class="card-img-top profile-img mx-auto mt-3" alt="Profile">
+            <div class="card-body">
+              <h5 class="card-title">Ram Kumar</h5>
+              <p class="card-text">Full Stack Developer</p>
+              <a href="#" class="btn btn-dark">Portfolio</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card profile-card shadow-lg">
+            <img src="profile2.jpg" class="card-img-top profile-img mx-auto mt-3" alt="Profile">
+            <div class="card-body">
+              <h5 class="card-title">Aman Kumar</h5>
+              <p class="card-text">Frontend Developer</p>
+              <a href="#" class="btn btn-dark">Portfolio</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card profile-card shadow-lg">
+            <img src="profile3.jpg" class="card-img-top profile-img mx-auto mt-3" alt="Profile">
+            <div class="card-body">
+              <h5 class="card-title">Rohan Kumar</h5>
+              <p class="card-text">React Developer</p>
+              <a href="#" class="btn btn-dark">Portfolio</a>
+            </div>
+          </div>
+        </div>
+
+        <!--Card 4-->
+
+      <div class="col-md-4">
+          <div class="card profile-card shadow-lg">
+            <img src="profile3.jpg" class="card-img-top profile-img mx-auto mt-3" alt="Profile">
+            <div class="card-body">
+              <h5 class="card-title">Rahul Kumar</h5>
+              <p class="card-text">React Developer</p>
+              <a href="#" class="btn btn-dark">Portfolio</a>
+            </div>
+          </div>
+        </div>
+        <!--Card 5-->
+
+      <div class="col-md-4">
+          <div class="card profile-card shadow-lg">
+            <img src="profile3.jpg" class="card-img-top profile-img mx-auto mt-3" alt="Profile">
+            <div class="card-body">
+              <h5 class="card-title">Jay Kumar</h5>
+              <p class="card-text">React Developer</p>
+              <a href="#" class="btn btn-dark">Portfolio</a>
+            </div>
+          </div>
+        </div>
       </div>
 
-    <!-- Login Button -->
-    <div class="d-grid gap-2 col-10 col-sm-6 mx-auto my-4">
-      <button class="btn btn-primary btn-lg" type="button">Login</button>
     </div>
-  </div>
+  </section>
 
-  <!-- Middle Page -->
-  <div class="middlepage container py-4">
-    <h2 class="mb-3">Github Command</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a, harum molestiae quod neque mollitia incidunt amet nulla quibusdam dolorum ratione quo consequatur!...</p>
-    
-    <div class="box my-3">
-      <div class="box1"></div>
-      <div class="box2"></div>
+  <!-- Contact Section -->
+  <section id="register" class="py-5 bg-light text-center">
+    <div class="container">
+      <h2 class="mb-4">Register</h2>
+      <form id="registerForm">
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Full Name" required>
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Email" required>
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Tech Role" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </div>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis repudiandae fugit omnis, impedit est voluptatem nesciunt fugiat cum numquam facilis...</p>
-  </div>
-
-  <!-- Last Page -->
-  <div class="lastpage container py-4">
-    <h2>Summary</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium tenetur vitae aliquid ad consectetur...</p>
-
-    <h3 class="mt-4">Organization</h3>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde tempore placeat asperiores ad, molestiae...</p>
-  </div>
+  </section>
 
   <!-- Footer -->
-  <footer>
-    <div class="footpanel">Back to Top</div>
-    <div class="copyright small">
-      © 1996-2025, Coding Club, Inc. or its affiliates
-    </div> 
+  <footer class="text-center p-3 bg-dark text-white">
+    © 2025 Event Club | Designed with ❤️ by Team-CodeHive
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="project.js"></script>
 </body>
 </html>
