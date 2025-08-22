@@ -10,6 +10,10 @@ section {
   justify-content: center;
 }
 
+#blogs{
+  background-color: #0f172a !important;
+} 
+
 .navbar .nav-link {
   color: #fff !important;
   margin: 0 10px;
@@ -20,7 +24,7 @@ section {
   content: "";
   width: 0%;
   height: 2px;
-  background: #64ffda;
+  background: #0dcaf0;
   position: absolute;
   left: 0;
   bottom: -4px;
@@ -47,7 +51,7 @@ section {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(10, 25, 47, 0.5);
+  background: rgba(12, 31, 58, 0.5);
   z-index: 1;
 }
 .frontpage .content {
@@ -65,7 +69,10 @@ section {
   left: 0;
   z-index: 1;
 }
-
+ 
+#head {
+  color: #fff;
+}
 
 .git-card {
   border-radius: 12px;
@@ -87,4 +94,15 @@ section {
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #64ffda;
+}
+
+/* 🔹 All buttons styled to GitNexus brand color */
+.btn {
+  background-color: #0dcaf0 !important;
+  border: none !important;
+  color: #fff !important;
+}
+.btn:hover {
+  background-color: #0bb8dc !important;
+  color: #fff !important;
 }

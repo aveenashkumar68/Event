@@ -19,8 +19,9 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#blogs">Git Commands</a></li>
-          <li class="nav-item"><a class="nav-link" href="#profiles">Profiles</a></li>
+          <li class="nav-item"><a class="nav-link" href="#github">Git Commands</a></li>
+          <li class="nav-item"><a class="nav-link" href="#aws">AWS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cicd">CI/CD</a></li>
           <li class="nav-item"><a class="nav-link" href="#register">Register</a></li>
         </ul>
       </div>
@@ -28,151 +29,238 @@
   </nav>
 
   <!-- Home Section -->
-<section id="home" class="frontpage d-flex align-items-center justify-content-center text-center">
-  
-  <img src="home.jpg" alt="Home Background" class="home-img">
+  <section id="home" class="frontpage d-flex align-items-center justify-content-center text-center">
+    <img src="home.jpg" alt="Home Background" class="home-img">
+    <div class="overlay"></div>
+    <div class="content text-white">
+      <h1 class="fw-bold">Welcome to Our Event Club</h1>
+      <p class="lead">Learn Git, Explore Tech, and Build Projects 🚀</p>
+      <a href="#github" class="btn btn-lg mt-3" style="background:#0dcaf0;color:#fff;font-weight:bold;border-radius:30px;">Explore Git Commands</a>
+    </div>
+  </section>
 
-  <div class="overlay"></div>
+  <!-- Why Git & GitHub Blog Section -->
+  <section id="github" class="py-5" style="background-color: #0f172a;">
+    <div class="container">
+      <h2 class="text-center text-white mb-4">Git & GitHub</h2>
+      <div class="p-4 rounded shadow" style="background-color:#1e293b; border:2px solid #0dcaf0; border-radius:15px;">
+        <h3 class="text-center mb-3 text-white">Why Git & GitHub?</h3>
+        <p class="lead text-light">
+          Git is a powerful version control system that helps developers track changes in their code,
+          collaborate with teammates, and roll back to earlier versions when needed.  
+          GitHub, on the other hand, is a platform that hosts Git repositories in the cloud. It allows
+          developers to share their projects, collaborate globally, and integrate with CI/CD pipelines.  
+        </p>
 
-  <div class="content text-white">
-    <h1 class="fw-bold">Welcome to Our Event Club</h1>
-    <p class="lead">Learn Git, Explore Tech, and Build Projects 🚀</p>
-    <a href="#blogs" class="btn btn-info btn-lg mt-3">Explore Git Commands</a>
+        <!-- Git Commands -->
+        <div class="row g-4 mt-4">
+          <!-- Beginner -->
+          <div class="col-md-4">
+            <div class="card shadow h-100" style="background-color:#0f172a; border:1px solid #0dcaf0;">
+              <div class="card-body text-center text-white">
+                <h5 class="card-title text-info">Beginner</h5>
+                <p><code>git init</code> – Initialize repository</p>
+                <p><code>git status</code> – Show changes</p>
+                <p><code>git add .</code> – Stage files</p>
+                <p><code>git commit -m ""</code> – Save changes</p>
+              </div>
+            </div>
+          </div>
+          <!-- Intermediate -->
+          <div class="col-md-4">
+            <div class="card shadow h-100" style="background-color:#0f172a; border:1px solid #0dcaf0;">
+              <div class="card-body text-center text-white">
+                <h5 class="card-title text-success">Intermediate</h5>
+                <p><code>git branch</code> – List branches</p>
+                <p><code>git checkout -b branch</code> – New branch</p>
+                <p><code>git merge branch</code> – Merge branch</p>
+                <p><code>git log --oneline</code> – Short log</p>
+              </div>
+            </div>
+          </div>
+          <!-- Advanced -->
+          <div class="col-md-4">
+            <div class="card shadow h-100" style="background-color:#0f172a; border:1px solid #0dcaf0;">
+              <div class="card-body text-center text-white">
+                <h5 class="card-title text-danger">Advanced</h5>
+                <p><code>git reset --hard HEAD~1</code> – Undo commit</p>
+                <p><code>git rebase main</code> – Reapply commits</p>
+                <p><code>git stash</code> – Save temp changes</p>
+                <p><code>git cherry-pick id</code> – Apply commit</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="https://git-scm.com/doc" target="_blank" class="btn btn-lg mx-2" style="background:#0dcaf0; color:#fff; font-weight:bold; border-radius:30px;">Git Documentation</a>
+          <a href="https://docs.github.com" target="_blank" class="btn btn-lg mx-2" style="background:#0dcaf0; color:#fff; font-weight:bold; border-radius:30px;">GitHub Documentation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWS Section -->
+  <section id="aws" class="py-5" style="background-color: #0f172a;">
+    <div class="container">
+      <h2 class="text-center text-white mb-4">Amazon Web Services (AWS)</h2>
+      <div class="p-4 rounded shadow" style="background-color:#1e293b; border:2px solid #0dcaf0; border-radius:15px;">
+        <h3 class="text-center mb-3 text-white">Why AWS?</h3>
+        <p class="lead text-light">
+          Amazon Web Services (AWS) is the world’s most comprehensive cloud platform,
+          offering over 200 fully featured services. With AWS, businesses and developers
+          can host applications, scale on demand, and pay only for what they use.
+        </p>
+
+        <!-- AWS Commands -->
+        <div class="row g-4 mt-4">
+          <!-- Beginner -->
+          <div class="col-md-4">
+            <div class="card shadow h-100" style="background-color:#0f172a; border:1px solid #0dcaf0;">
+              <div class="card-body text-center text-white">
+                <h5 class="card-title text-info">Beginner</h5>
+                <p><code>aws configure</code> – Set credentials</p>
+                <p><code>aws s3 ls</code> – List S3 buckets</p>
+                <p><code>aws ec2 describe-instances</code> – View EC2 instances</p>
+              </div>
+            </div>
+          </div>
+          <!-- Intermediate -->
+          <div class="col-md-4">
+            <div class="card shadow h-100" style="background-color:#0f172a; border:1px solid #0dcaf0;">
+              <div class="card-body text-center text-white">
+                <h5 class="card-title text-success">Intermediate</h5>
+                <p><code>aws s3 cp file.txt s3://bucket/</code> – Upload to S3</p>
+                <p><code>aws ec2 start-instances --instance-ids i-123456</code> – Start EC2</p>
+                <p><code>aws lambda list-functions</code> – List Lambda functions</p>
+              </div>
+            </div>
+          </div>
+          <!-- Advanced -->
+          <div class="col-md-4">
+            <div class="card shadow h-100" style="background-color:#0f172a; border:1px solid #0dcaf0;">
+              <div class="card-body text-center text-white">
+                <h5 class="card-title text-danger">Advanced</h5>
+                <p><code>aws cloudformation deploy</code> – Deploy infrastructure</p>
+                <p><code>aws ecs create-cluster</code> – Create ECS cluster</p>
+                <p><code>aws eks create-cluster</code> – Create EKS cluster</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="https://docs.aws.amazon.com/" target="_blank" class="btn btn-lg" style="background:#0dcaf0; color:#fff; font-weight:bold; border-radius:30px;">Explore AWS Documentation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CI & CD Section -->
+  <section id="cicd" class="py-5" style="background-color: #0f172a;">
+    <div class="container">
+      <h2 class="text-center text-white mb-4">CI & CD Pipelines</h2>
+      <div class="p-4 rounded shadow" style="background-color:#1e293b; border:2px solid #0dcaf0; border-radius:15px;">
+        <h3 class="text-center mb-3 text-white">Why CI & CD?</h3>
+        <p class="lead text-light">
+          Continuous Integration (CI) is the practice of automatically integrating code into a repository and testing it.
+          Continuous Deployment (CD) extends this by delivering tested code into production environments.
+        </p>
+
+        <div class="row g-4 mt-4">
+          <div class="col-md-6">
+            <div class="card shadow h-100" style="background-color:#0f172a; border:1px solid #0dcaf0;">
+              <div class="card-body text-white">
+                <h5 class="card-title text-info">CI (Continuous Integration)</h5>
+                <p><code>git push origin main</code> – Trigger CI pipeline</p>
+                <p><code>mvn test</code> – Run automated tests (Java Example)</p>
+                <p><code>npm run test</code> – Run unit tests (Node.js Example)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card shadow h-100" style="background-color:#0f172a; border:1px solid #0dcaf0;">
+              <div class="card-body text-white">
+                <h5 class="card-title text-success">CD (Continuous Deployment)</h5>
+                <p><code>docker build -t app .</code> – Build Docker image</p>
+                <p><code>docker push repo/app</code> – Push to registry</p>
+                <p><code>kubectl apply -f deploy.yml</code> – Deploy to Kubernetes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="https://aws.amazon.com/devops/ci-cd/" target="_blank" class="btn btn-lg" style="background:#0dcaf0; color:#fff; font-weight:bold; border-radius:30px;">CI/CD Documentation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Register -->
+<section id="register" class="py-5" style="background-color: #0f172a;">
+  <div class="container">
+    <h2 class="mb-4 text-white text-center">Student Registration</h2>
+    <div class="row align-items-center">
+      
+      <!-- Right Side Form (comes first on mobile) -->
+      <div class="col-md-7 order-1 order-md-2 mb-4">
+        <div class="card shadow-lg p-4" style="border-radius: 15px;">
+          <form id="registerForm">
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Full Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="College Name" required>
+            </div>
+            <div class="mb-3">
+              <select class="form-control" required>
+                <option value="">Select Branch</option>
+                <option value="CSE">Computer Science Engineering</option>
+                <option value="ECE">Electronics & Communication</option>
+                <option value="EEE">Electrical & Electronics</option>
+                <option value="ME">Mechanical Engineering</option>
+                <option value="CE">Civil Engineering</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <select class="form-control" required>
+                <option value="">Select Year</option>
+                <option value="1st">1st Year</option>
+                <option value="2nd">2nd Year</option>
+                <option value="3rd">3rd Year</option>
+                <option value="4th">4th Year</option>
+              </select>
+            </div>
+            <button type="submit" class="btn w-100"
+                    style="background-color:#0dcaf0; color:#fff; font-weight:bold; border-radius:30px;">
+              Register Now
+            </button>
+          </form>
+        </div>
+      </div>
+      
+      <!-- Left Side (Social Media + Location) -->
+      <div class="col-md-5 text-white text-center order-2 order-md-1">
+        <h4 class="mb-3">Connect With Us</h4>
+        <div class="d-flex justify-content-center mb-3">
+          <a href="#" class="mx-2 text-info fs-3"><i class="fab fa-github"></i></a>
+          <a href="#" class="mx-2 text-primary fs-3"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="mx-2 text-danger fs-3"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="mx-2 text-success fs-3"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <h5><i class="fas fa-map-marker-alt"></i> Our Location</h5>
+        <p>Excel Engineering College, Kumaraplayam, TamilNadu</p>
+      </div>
+
+    </div>
   </div>
 </section>
 
-
-  <!-- Git Commands Section -->
-  <section id="blogs" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">Git Commands</h2>
-      <div class="row g-4">
-        <!-- Beginner -->
-        <div class="col-md-4">
-          <div class="card git-card shadow-lg h-100">
-            <div class="card-body text-center">
-              <h4 class="card-title text-primary">Beginner</h4>
-              <p><code>git init</code> – Initialize repository</p>
-              <p><code>git status</code> – Show changes</p>
-              <p><code>git add .</code> – Stage files</p>
-              <p><code>git commit -m ""</code> – Save changes</p>
-            </div>
-          </div>
-        </div>
-        <!-- Intermediate -->
-        <div class="col-md-4">
-          <div class="card git-card shadow-lg h-100">
-            <div class="card-body text-center">
-              <h4 class="card-title text-success">Intermediate</h4>
-              <p><code>git branch</code> – List branches</p>
-              <p><code>git checkout -b branch</code> – New branch</p>
-              <p><code>git merge branch</code> – Merge branch</p>
-              <p><code>git log --oneline</code> – Short log</p>
-            </div>
-          </div>
-        </div>
-        <!-- Advanced -->
-        <div class="col-md-4">
-          <div class="card git-card shadow-lg h-100">
-            <div class="card-body text-center">
-              <h4 class="card-title text-danger">Advanced</h4>
-              <p><code>git reset --hard HEAD~1</code> – Undo commit</p>
-              <p><code>git rebase main</code> – Reapply commits</p>
-              <p><code>git stash</code> – Save temp changes</p>
-              <p><code>git cherry-pick id</code> – Apply commit</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Multiple Profile Cards -->
-  <section id="profiles" class="py-5 text-center">
-    <div class="container">
-      <h2 class="mb-4">Our Team</h2>
-      <div class="row g-4">
-        <!-- Card 1 -->
-        <div class="col-md-4">
-          <div class="card profile-card shadow-lg">
-            <img src="profile1.jpg" class="card-img-top profile-img mx-auto mt-3" alt="Profile">
-            <div class="card-body">
-              <h5 class="card-title">Ram Kumar</h5>
-              <p class="card-text">Full Stack Developer</p>
-              <a href="#" class="btn btn-dark">Portfolio</a>
-            </div>
-          </div>
-        </div>
-        <!-- Card 2 -->
-        <div class="col-md-4">
-          <div class="card profile-card shadow-lg">
-            <img src="profile2.jpg" class="card-img-top profile-img mx-auto mt-3" alt="Profile">
-            <div class="card-body">
-              <h5 class="card-title">Aman Kumar</h5>
-              <p class="card-text">Frontend Developer</p>
-              <a href="#" class="btn btn-dark">Portfolio</a>
-            </div>
-          </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="col-md-4">
-          <div class="card profile-card shadow-lg">
-            <img src="profile3.jpg" class="card-img-top profile-img mx-auto mt-3" alt="Profile">
-            <div class="card-body">
-              <h5 class="card-title">Rohan Kumar</h5>
-              <p class="card-text">React Developer</p>
-              <a href="#" class="btn btn-dark">Portfolio</a>
-            </div>
-          </div>
-        </div>
-
-        <!--Card 4-->
-
-      <div class="col-md-4">
-          <div class="card profile-card shadow-lg">
-            <img src="profile3.jpg" class="card-img-top profile-img mx-auto mt-3" alt="Profile">
-            <div class="card-body">
-              <h5 class="card-title">Rahul Kumar</h5>
-              <p class="card-text">React Developer</p>
-              <a href="#" class="btn btn-dark">Portfolio</a>
-            </div>
-          </div>
-        </div>
-        <!--Card 5-->
-
-      <div class="col-md-4">
-          <div class="card profile-card shadow-lg">
-            <img src="profile3.jpg" class="card-img-top profile-img mx-auto mt-3" alt="Profile">
-            <div class="card-body">
-              <h5 class="card-title">Jay Kumar</h5>
-              <p class="card-text">React Developer</p>
-              <a href="#" class="btn btn-dark">Portfolio</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="register" class="py-5 bg-light text-center">
-    <div class="container">
-      <h2 class="mb-4">Register</h2>
-      <form id="registerForm">
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Full Name" required>
-        </div>
-        <div class="mb-3">
-          <input type="email" class="form-control" placeholder="Email" required>
-        </div>
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Tech Role" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </div>
-  </section>
 
   <!-- Footer -->
   <footer class="text-center p-3 bg-dark text-white">
