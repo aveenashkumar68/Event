@@ -13,6 +13,5 @@ gsap.from(".git-card", {
 
 document.getElementById("registerForm").addEventListener("submit", function(e) {
   e.preventDefault();
-
   window.location.href = "https://forms.gle/cwh4RSCo7aTj6Bui8";
 });
