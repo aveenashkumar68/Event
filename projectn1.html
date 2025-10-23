@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="projectn1.css">
 </head>
+
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
@@ -35,7 +37,8 @@
     <div class="content text-white">
       <h1 class="fw-bold">Welcome to Our Event Club</h1>
       <p class="lead">Learn Git, Explore Tech, and Build Projects 🚀</p>
-      <a href="#github" class="btn btn-lg mt-3" style="background:#0dcaf0;color:#fff;font-weight:bold;border-radius:30px;">Explore Git Commands</a>
+      <a href="#github" class="btn btn-lg mt-3"
+        style="background:#0dcaf0;color:#fff;font-weight:bold;border-radius:30px;">Explore Git Commands</a>
     </div>
   </section>
 
@@ -47,9 +50,9 @@
         <h3 class="text-center mb-3 text-white">Why Git & GitHub?</h3>
         <p class="lead text-light">
           Git is a powerful version control system that helps developers track changes in their code,
-          collaborate with teammates, and roll back to earlier versions when needed.  
+          collaborate with teammates, and roll back to earlier versions when needed.
           GitHub, on the other hand, is a platform that hosts Git repositories in the cloud. It allows
-          developers to share their projects, collaborate globally, and integrate with CI/CD pipelines.  
+          developers to share their projects, collaborate globally, and integrate with CI/CD pipelines.
         </p>
 
         <!-- Git Commands -->
@@ -93,9 +96,18 @@
         </div>
 
         <div class="text-center mt-4">
-          <a href="https://git-scm.com/doc" target="_blank" class="btn btn-lg mx-2" style="background:#0dcaf0; color:#fff; font-weight:bold; border-radius:30px;">Git Documentation</a>
-          <a href="https://docs.github.com" target="_blank" class="btn btn-lg mx-2" style="background:#0dcaf0; color:#fff; font-weight:bold; border-radius:30px;">GitHub Documentation</a>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="https://git-scm.com/doc" target="_blank" class="btn btn-lg"
+              style="background:#0dcaf0; color:#fff; font-weight:bold; border-radius:30px; min-width:200px;">
+              Git Documentation
+            </a>
+            <a href="https://docs.github.com" target="_blank" class="btn btn-lg"
+              style="background:#0dcaf0; color:#fff; font-weight:bold; border-radius:30px; min-width:200px;">
+              GitHub Documentation
+            </a>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -150,7 +162,8 @@
         </div>
 
         <div class="text-center mt-4">
-          <a href="https://docs.aws.amazon.com/" target="_blank" class="btn btn-lg" style="background:#0dcaf0; color:#fff; font-weight:bold; border-radius:30px;">Explore AWS Documentation</a>
+          <a href="https://docs.aws.amazon.com/" target="_blank" class="btn btn-lg"
+            style="background:#0dcaf0; color:#fff; font-weight:bold; border-radius:30px;">Explore AWS Documentation</a>
         </div>
       </div>
     </div>
@@ -163,7 +176,8 @@
       <div class="p-4 rounded shadow" style="background-color:#1e293b; border:2px solid #0dcaf0; border-radius:15px;">
         <h3 class="text-center mb-3 text-white">Why CI & CD?</h3>
         <p class="lead text-light">
-          Continuous Integration (CI) is the practice of automatically integrating code into a repository and testing it.
+          Continuous Integration (CI) is the practice of automatically integrating code into a repository and testing
+          it.
           Continuous Deployment (CD) extends this by delivering tested code into production environments.
         </p>
 
@@ -191,84 +205,51 @@
         </div>
 
         <div class="text-center mt-4">
-          <a href="https://aws.amazon.com/devops/ci-cd/" target="_blank" class="btn btn-lg" style="background:#0dcaf0; color:#fff; font-weight:bold; border-radius:30px;">CI/CD Documentation</a>
+          <a href="https://docs.gitlab.com/ci/pipelines/" target="_blank" class="btn btn-lg"
+            style="background:#0dcaf0; color:#fff; font-weight:bold; border-radius:30px;">CI/CD Documentation</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Register -->
-<section id="register" class="py-5" style="background-color: #0f172a;">
-  <div class="container">
-    <h2 class="mb-4 text-white text-center">Student Registration</h2>
-    <div class="row align-items-center">
-      
-      <!-- Right Side Form (comes first on mobile) -->
-      <div class="col-md-7 order-1 order-md-2 mb-4">
-        <div class="card shadow-lg p-4" style="border-radius: 15px;">
-          <form id="registerForm">
-            <div class="mb-3">
-              <input type="text" class="form-control" placeholder="Full Name" required>
-            </div>
-            <div class="mb-3">
-              <input type="email" class="form-control" placeholder="Email" required>
-            </div>
-            <div class="mb-3">
-              <input type="text" class="form-control" placeholder="College Name" required>
-            </div>
-            <div class="mb-3">
-              <select class="form-control" required>
-                <option value="">Select Branch</option>
-                <option value="CSE">Computer Science Engineering</option>
-                <option value="ECE">Electronics & Communication</option>
-                <option value="EEE">Electrical & Electronics</option>
-                <option value="ME">Mechanical Engineering</option>
-                <option value="CE">Civil Engineering</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-            <div class="mb-3">
-              <select class="form-control" required>
-                <option value="">Select Year</option>
-                <option value="1st">1st Year</option>
-                <option value="2nd">2nd Year</option>
-                <option value="3rd">3rd Year</option>
-                <option value="4th">4th Year</option>
-              </select>
-            </div>
-            <button type="submit" class="btn w-100"
-                    style="background-color:#0dcaf0; color:#fff; font-weight:bold; border-radius:30px;">
-              Register Now
-            </button>
-          </form>
-        </div>
+  <!-- Register -->
+  <section id="register" class="py-5" style="background-color: #0f172a;">
+    <div class="container text-center text-white">
+      <h2 class="mb-4">Student Registration</h2>
+
+      <div class="p-5 rounded shadow-lg mx-auto"
+        style="max-width:600px; background-color:#1e293b; border:2px solid #0dcaf0; border-radius:15px;">
+        <p class="lead mb-4">Ready to join our event? Click below to register now!</p>
+        <a href="https://forms.gle/cwh4RSCo7aTj6Bui8" target="_blank" class="btn btn-lg"
+          style="background:#0dcaf0; color:#fff; font-weight:bold; border-radius:30px; padding:12px 40px;">
+          Register Now
+        </a>
       </div>
-      
-      <!-- Left Side (Social Media + Location) -->
-      <div class="col-md-5 text-white text-center order-2 order-md-1">
-        <h4 class="mb-3">Connect With Us</h4>
+
+      <div class="mt-5">
+        <h5 class="mb-3">Connect With Us</h5>
         <div class="d-flex justify-content-center mb-3">
           <a href="#" class="mx-2 text-info fs-3"><i class="fab fa-github"></i></a>
           <a href="#" class="mx-2 text-primary fs-3"><i class="fab fa-linkedin"></i></a>
           <a href="#" class="mx-2 text-danger fs-3"><i class="fab fa-instagram"></i></a>
           <a href="#" class="mx-2 text-success fs-3"><i class="fab fa-whatsapp"></i></a>
         </div>
-        <h5><i class="fas fa-map-marker-alt"></i> Our Location</h5>
-        <p>Excel Engineering College, Kumarapalayam, TamilNadu</p>
+        <h6><i class="fas fa-map-marker-alt"></i> Excel Engineering College, Kumarapalayam, TamilNadu</h6>
       </div>
-
     </div>
-  </div>
-</section>
+  </section>
+
 
 
   <!-- Footer -->
   <footer class="text-center p-3 bg-dark text-white">
-    © 2025 Event Club | Designed with ❤️ by Team-CodeHive
+    © 2025 Event Club | Designed with ❤️ by Techno-Debuggers
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="project.js"></script>
 </body>
+
 </html>
